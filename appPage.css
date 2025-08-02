@@ -1,0 +1,209 @@
+* {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f6f6f6;
+    color: #070707;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #d0d0d0b2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    color: #069d3b;
+}
+
+#sidePanel {
+    position: fixed;
+    top: 60px;
+    right: -250px;
+    width: 250px;
+    background: rgba(255, 250, 245, 0.514);
+    color: #000000;
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+#sidePanel ul {
+    list-style: none;
+    padding: 20px;
+    color: #000;
+}
+
+#sidePanel ul li a {
+    display: block;
+    padding: 10px;
+    color: #313131bd;
+    text-decoration: none;
+    border-bottom: #0000002b solid 1px;
+}
+
+#sidePanel ul li a:hover {
+    background: #9f9f9f1f;
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.app-icon {
+    width: 180px;
+    height: 170px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #01a40c;
+    margin-top: -10px;
+    margin-bottom: 4px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #259145;
+}
+
+.download-btn,
+.promo-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    color: #fff;
+    background: #05a510;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    min-width: fit-content;
+
+}
+
+.promo-btn {
+    margin-top: 2px;
+    background: #6cc5e9;
+}
+
+.download-btn:hover {
+    background: #187137;
+}
+
+.promo-btn:hover {
+    background: #1e6c83;
+}
+
+table {
+    width: 80%;
+    max-width: 400px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    padding-right: 3px;
+    border-bottom: #eeeeee solid 2px;
+}
+
+table th {
+    background: #2ebd59;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #010a4569;
+    color: #fff;
+    position: relative;
+}
+
+.close-btn {
+    text-align: right;
+    padding: 10px 15px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.clrfl {
+    background-color: #348caf3a;
+}
+
+.clrfl2 {
+    background-color: #0000000f;
+}
+
+.footertext {
+    color: #484848f9;
+}
+
+dialog {
+    width: 300px;
+    min-width: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.252);
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.326);
+    z-index: 1000;
+    inset: 0;
+    margin: auto;
+    position: fixed;
+}
+
+#clsDlg {
+    width: 100%;
+    min-width: fit-content;
+    background-color: #f83d13;
+    border: none;
+    color: #ffffff;
+    font-size: medium;
+    border-radius: 5px;
+    height: 28px;
+    transition: all 0.1s ease;
+}
+
+#clsDlg:hover {
+    background-color: #b64112;
+    color: antiquewhite;
+}

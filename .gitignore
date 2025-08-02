@@ -1,0 +1,12 @@
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor folders
+.vscode/
+.idea/
+
+# Future build or secrets
+node_modules/
+.env
+dist/
